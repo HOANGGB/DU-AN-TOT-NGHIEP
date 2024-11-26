@@ -1,0 +1,128 @@
+﻿@model WEB.Controllers.OrderDetailView
+
+@{
+    ViewBag.Title = "Chi Tiết Đơn Hàng";
+}
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+   
+
+        <!-- Content Area Right -->
+        <div class="col-md-12 content">
+    <h2 class="text-center mb-4">Chi Tiết Đơn Hàng</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-warning text-white">
+                    Thông Tin Đơn Hàng
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Mã Đơn Hàng:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Donhang.DonHangID</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Người Đặt:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Nguoidung.HoTen</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Shiper:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Shiper?.HoTen</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Địa Chỉ ID:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Diachi.DiaChiChiTiet</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Ngày Đặt Hàng:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Donhang.NgayDatHang.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Trạng Thái:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Donhang.TrangThai</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label font-weight-bold">Tổng Giá:</label>
+                        <div class="col-sm-8">
+                            <p class="form-control-plaintext">@Model.Donhang.TongGia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</p>
+                        </div>
+                    </div>
+                    <h2 class="text-success text-center m-5">Danh sách sản phẩm</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Số lượng</th>
+                                        <th>Kích thước</th>
+                                        <th>Giá</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var ct in Model.CtDonhang)
+                                    {
+                                        <tr>
+                                            <td>@ct.TenSanPham</td>
+                                            <td>@ct.SoLuong</td>
+                                            <td>@ct.KichThuoc</td>
+                                            <td>@ct.DonGia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
+                                            <td>
+                                                <div class="col-sm-6">
+                                                    <form action="/Home/Detail" method="post">
+                                                        <input type="hidden" name="id" value="@ct.SanPhamID" />
+                                                        <button type="submit" class="btn btn-warning btn-sm">Xem sản phẩm</button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+        </div>
+    </div>
+</div>

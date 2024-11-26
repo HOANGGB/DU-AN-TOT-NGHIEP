@@ -1,0 +1,38 @@
+﻿@model WEB.Models.SanPham
+
+<h2 class="text-center text-success m-5">Đánh giá sản phẩm</h2>
+<form asp-controller="Cart" asp-action="SubmitReview" method="post" class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="row">
+            <!-- Cột Điểm Đánh Giá -->
+            <div class="form-group col-md-6">
+                <label for="diemDanhGia">Điểm đánh giá (từ 1 đến 5 sao):</label>
+                <div id="diemDanhGia" class="d-flex justify-content-between">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="diem" id="star@i" value="@i" required />
+                            <label class="form-check-label" for="star@i">
+                                    @i<i class="fas fa-star text-warning"></i>
+                            </label>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Cột Nội Dung Đánh Giá -->
+            <div class="form-group col-md-6">
+                <label for="noiDungDanhGia">Nội dung đánh giá:</label>
+                <textarea class="form-control" id="noiDungDanhGia" name="danhgia" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <!-- Input ẩn cho ID sản phẩm -->
+        <input type="hidden" name="id" value="@Model.SanPhamID" />
+
+        <!-- Button Gửi Đánh Giá -->
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary col-md-4">Gửi đánh giá</button>
+        </div>
+    </div>
+</form>

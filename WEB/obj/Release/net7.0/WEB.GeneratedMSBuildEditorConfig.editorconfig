@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WEB
+build_property.RootNamespace = WEB
+build_property.ProjectDir = D:\FPT_Polytechnic\DỰ ÁN TỐT NGHIỆP\DU AN TOT NGHIEP\WEB\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\FPT_Polytechnic\DỰ ÁN TỐT NGHIỆP\DU AN TOT NGHIEP\WEB
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Account/Address.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Cart/Buy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxCdXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Cart/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Cart/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Cart/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Home/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Home/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Home/Seach.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/DetailKT.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxEZXRhaWxLVC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/DetailOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxEZXRhaWxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/Revenue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxSZXZlbnVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxSZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/Shiper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxTaGlwZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Manager/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shiper/Cancelled.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcGVyXENhbmNlbGxlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shiper/Delivered.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcGVyXERlbGl2ZXJlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shiper/InProgress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcGVyXEluUHJvZ3Jlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shiper/Pending.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcGVyXFBlbmRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_Polytechnic/DỰ ÁN TỐT NGHIỆP/DU AN TOT NGHIEP/WEB/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tcgsckyrk2

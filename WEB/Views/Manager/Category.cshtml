@@ -1,0 +1,110 @@
+﻿@model WEB.Controllers.CategoryView
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-md-2 sidebar">
+
+            <a href="/Manager/User" class="btn btn-primary btn-block mb-3 ">Quản lý Người dùng</a>
+            <a href="/Manager/Product" class="btn btn-primary btn-block mb-3">Quản lý sản phẩm</a>
+            <a href="/Manager/Order" class="btn btn-primary btn-block mb-3">Quản lý đơn hàng</a>
+            <a href="/Manager/Category" class="btn btn-primary btn-block mb-3">Quản lý danh mục</a>
+            <a href="/Manager/Shiper" class="btn btn-primary btn-block mb-3">Quản lý Shiper</a>
+            <a href="/Manager/Review" class="btn btn-primary btn-block mb-3">Quản lý đánh giá</a>
+            <a href="/Manager/Revenue" class="btn btn-primary btn-block mb-3">Quản lý doanh thu</a>
+
+
+        </div>
+
+        <!-- Content Area Right -->
+        <div class="col-md-10 content">
+
+
+            <div class="container-fluid">
+                <h2>@ViewData["Title"]</h2>
+                <div class="row">
+                    <!-- Cột bên trái: Danh sách danh mục -->
+                    <div class="col-md-6">
+                        <h4>Danh Sách Danh Mục Sản Phẩm</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên Danh Mục</th>
+                                    <th>Hành Động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var c in Model.DanhMucSanPhams)
+                                {
+                                    <tr>
+                                        <td>@c.DanhMucID</td>
+                                        <td>@c.TenDanhMuc</td>
+                                       <td>
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <form action="/Manager/EditCategory" method="post">
+                                                        <input type="hidden" name="id" value="@c.DanhMucID" />
+                                                        <button type="submit" class="btn btn-warning btn-sm">Sửa</button>
+                                                    </form>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <form action="/Manager/DeleteCategory" method="post">
+                                                        <input type="hidden" name="id" value="@c.DanhMucID" />
+                                                        <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    
+                                }
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Form thêm mới danh mục -->
+                    <div class="col-md-6">
+                        <h4>Thêm Danh Mục Mới</h4>
+                        <form asp-controller="Manager" asp-action="UpdateCategory">
+                            <div class="mb-3">
+                                <label for="CategoryName" class="form-label">Danh Mục ID</label>
+                                <input type="text" class="form-control" id="CategoryName" value="@Model.DMSP?.DanhMucID" name="DanhMucID" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="CategoryName" class="form-label">Tên Danh Mục</label>
+                                <input type="text" class="form-control" id="CategoryName" value="@Model.DMSP?.TenDanhMuc" name="TenDanhMuc" placeholder="Nhập tên danh mục">
+                            </div>
+                                 <button type="submit" class="btn btn-success btn-sm">Cập nhật</button>
+                                  <a href="/Manager/Category" class="btn btn-warning">Làm mới</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+

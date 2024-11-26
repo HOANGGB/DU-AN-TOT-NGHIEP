@@ -1,0 +1,199 @@
+﻿@model WEB.Controllers.ProductView
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-md-2 sidebar">
+            <a href="/Manager/User" class="btn btn-primary btn-block mb-3">Quản lý Người dùng</a>
+            <a href="/Manager/Product" class="btn btn-primary btn-block mb-3">Quản lý sản phẩm</a>
+            <a href="/Manager/Order" class="btn btn-primary btn-block mb-3">Quản lý đơn hàng</a>
+            <a href="/Manager/Category" class="btn btn-primary btn-block mb-3">Quản lý danh mục</a>
+            <a href="/Manager/Shiper" class="btn btn-primary btn-block mb-3">Quản lý Shiper</a>
+            <a href="/Manager/Review" class="btn btn-primary btn-block mb-3">Quản lý đánh giá</a>
+            <a href="/Manager/Revenue" class="btn btn-primary btn-block mb-3">Quản lý doanh thu</a>
+
+
+        </div>
+
+        <!-- Content Area Right -->
+        <div class="col-md-10 content">
+            @{
+                ViewData["Title"] = "Quản Lý Sản Phẩm";
+            }
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Cột bên trái: Danh sách sản phẩm -->
+                    <div class="col-md-7 ">
+                        <h4>Danh Sách Sản Phẩm</h4>
+
+                        <!-- Ô Tìm Kiếm -->
+                        <form asp-controller="Manager" asp-action="Product" method="get">
+                            <!-- Ô Tìm Kiếm -->
+                            <div class="row">
+                                <div class="mb-3 col-sm-10">
+                                    <input type="text" class="form-control" name="TenSanPham" placeholder="Tìm kiếm tên sản phẩm..." id="SearchUser"  />
+                                </div>
+                                <div class="mb-3 col-sm-2">
+                                    <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="" style="max-height: 300px; overflow-y:auto;">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Hình Ảnh</th>
+                                    <th>Tên Sản Phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Hành Động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var sp in Model.Sanphams)
+                                {
+                                    <tr>
+                                        <td>@sp.SanPhamID</td>
+                                        <td>@sp.HinhAnh</td>
+                                        <td>@sp.TenSanPham</td>
+                                        <td>@sp.Gia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
+                                        <td>
+                                            <form action="/Manager/EditProduct" method="post">
+                                                <input type="hidden" name="id" value="@sp.SanPhamID" />
+                                                <button type="submit" class="btn btn-warning btn-sm">Sửa</button>
+                                            </form>                                        
+                                        </td>
+                                    </tr>
+                                    
+                                }
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                        <a href="/Manager/Product" class="btn btn-primary">Làm mới danh sách</a>
+
+                    </div>
+
+                    <!-- Cột bên phải: Thông tin sản phẩm -->
+                    <div class="col-md-5">
+                        <h4>Thông Tin Sản Phẩm</h4>
+                        <form asp-controller="Manager" asp-action="UpdateProduct" enctype="multipart/form-data">
+                            <div class="mb-3 row">
+                                <label for="ProductName" class="form-label col-md-3">ID</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" value="@Model.SanphamHT?.SanPhamID" id="ProductName" name="SanPhamID" readonly />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="ProductImage" class="form-label col-md-3">Ảnh Sản Phẩm</label>
+                                <div class="col-md-9">
+                                    <input type="file" class="form-control" value="@Model.SanphamHT?.HinhAnh" id="ProductImage" name="HinhAnh" />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="ProductName" class="form-label col-md-3">Tên Sản Phẩm</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" value="@Model.SanphamHT?.TenSanPham" id="ProductName" name="TenSanPham" placeholder="Nhập tên sản phẩm" required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="ProductPrice" class="form-label col-md-3">Giá</label>
+                                <div class="col-md-9">
+                                    <input type="number" class="form-control" id="ProductPrice" value="@Model.SanphamHT?.Gia" name="Gia" placeholder="Nhập giá sản phẩm " required />
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="ProductQuantity" class="form-label col-md-3">Kích Cỡ:</label>
+                                @if(Model.SanphamHT == null)
+                                {
+                                    <div class="col-md-2">
+                                        <input type="text" class="form-control" id="ProductQuantity" name="KichThuoc" placeholder="Nhập kích cỡ" required  />
+                                    </div>
+                                    <label for="ProductQuantity" class="form-label col-md-3">Số Lượng:</label>
+                                    <div class="col-md-2">
+                                        <input type="number" class="form-control" id="ProductQuantity" name="SoLuongTon" placeholder="Nhập số lượng" required  />
+                                   </div>
+                                    
+                                }
+                                
+
+                            </div>
+                           <div class="mb-3 row">
+                                <label for="UserRole" class="form-label col-md-3">Danh Mục</label>
+                                <div class="col-md-9">
+                                    <select class="form-control" id="UserRole" name="DMID" required>
+                                        @foreach(var dm in Model.DanhMucSanPhams)
+                                        {
+                                            @if (Model.SanphamHT?.DanhMucID == dm.DanhMucID)
+                                            {
+                                                <option value="@dm.DanhMucID" selected="selected">@dm.TenDanhMuc</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@dm.DanhMucID">@dm.TenDanhMuc</option>
+                                            }                                        
+                                         }
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="ProductDescription" class="form-label col-md-3">Mô Tả</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="ProductDescription" name="MoTa" placeholder="Mô tả" rows="2">@Model.SanphamHT?.MoTa</textarea>
+                                </div>
+                            </div>
+
+                            <div class="mt-5">
+                                <button type="submit" class="btn btn-success btn-sm ">Cập nhật</button>
+                                <a href="/Manager/Product" class="btn btn-warning btn-sm">Làm mới</a>
+
+                            </div>
+
+                        </form>
+                        @if (Model.SanphamHT != null)
+                        {
+                            <div style="margin-top: -50px; margin-left: 50%;">
+                                <form action="/Manager/DetailKT" method="post">
+                                    <input type="hidden" name="id" value="@Model.SanphamHT?.SanPhamID" />
+                                    <button type="submit" class="btn btn-success btn-sm">Xem Các Kích Cỡ Hiện Có</button>
+                                </form>
+                            </div>
+
+
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,110 @@
+﻿@model WEB.Controllers.KichThuocView
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-md-2 sidebar">
+            <a href="/Manager/User" class="btn btn-primary btn-block mb-3">Quản lý Người dùng</a>
+            <a href="/Manager/Product" class="btn btn-primary btn-block mb-3">Quản lý sản phẩm</a>
+            <a href="/Manager/Order" class="btn btn-primary btn-block mb-3">Quản lý đơn hàng</a>
+            <a href="/Manager/Category" class="btn btn-primary btn-block mb-3">Quản lý danh mục</a>
+            <a href="/Manager/Shiper" class="btn btn-primary btn-block mb-3">Quản lý Shiper</a>
+            <a href="/Manager/Review" class="btn btn-primary btn-block mb-3">Quản lý đánh giá</a>
+            <a href="/Manager/Revenue" class="btn btn-primary btn-block mb-3">Quản lý doanh thu</a>
+
+
+        </div>
+
+        <!-- Content Area Right -->
+        <div class="col-md-10 content">
+                <div class="row mt-5">
+                    <!-- Hiển thị danh sách kích thước hiện có -->
+				    <div class=" col-sm-4">
+
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Kích thước</th>
+                                <th>Số Lượng Tồn</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var kt in Model.KTSP)
+                            {
+                                <tr>
+                                    <td>@kt.KichThuoc</td>
+                                    <td>@kt.SoLuongTon</td>
+                                    <td>
+                                        <form action="/Manager/EditKTSP" method="post">
+                                            <input type="hidden" name="id" value="@kt.SanPhamID"/>
+                                            <input type="hidden" name="idkt" value="@kt.KichThuocID" />
+                                            <button type="submit" class="btn btn-warning btn-sm">Sửa</button>
+                                        </form>                                        
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    </div>
+                
+                   <div class="col-sm-4">
+
+                    <h2>Cập Nhật Kich Thước</h2>
+                    <form asp-controller="Manager" asp-action="AddKichThuoc" method="post">
+                        <div class="form-group">
+                             <div class="mb-3 row">
+                                <label for="ProductName" class="form-label col-md-3">ID</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" value="@Model.KichThuocHT?.KichThuocID" name="KichThuocID" readonly />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="ProductName" class="form-label col-md-3">Kích Thước</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" value="@Model.KichThuocHT?.KichThuoc" id="ProductName" name="KichThuoc" required />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="ProductName" class="form-label col-md-3">Số Lượng Tồn</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" value="@Model.KichThuocHT?.SoLuongTon" id="ProductName" name="SoLuongTon" required />
+                                </div>
+                            </div>
+
+                        </div>
+                        <input type="hidden" value="@Model.SanPhamID" name="id" required />
+
+                        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+                    </form>
+                    <form action="/Manager/DetailKT" method="post">
+                        <input type="hidden" name="id" value="@Model.SanPhamID"/>
+                        <button type="submit" class="btn btn-warning btn-sm">Làm mới</button>
+                    </form> 
+                   </div>
+                </div>
+                
+
+
+        </div>
+    </div>
+</div>
+

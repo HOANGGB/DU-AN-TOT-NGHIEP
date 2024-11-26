@@ -1,0 +1,187 @@
+﻿@model WEB.Controllers.RevenueView
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-md-2 sidebar">
+            <a href="/Manager/User" class="btn btn-primary btn-block mb-3">Quản lý Người dùng</a>
+            <a href="/Manager/Product" class="btn btn-primary btn-block mb-3">Quản lý sản phẩm</a>
+            <a href="/Manager/Order" class="btn btn-primary btn-block mb-3">Quản lý đơn hàng</a>
+            <a href="/Manager/Category" class="btn btn-primary btn-block mb-3">Quản lý danh mục</a>
+            <a href="/Manager/Shiper" class="btn btn-primary btn-block mb-3">Quản lý Shiper</a>
+            <a href="/Manager/Review" class="btn btn-primary btn-block mb-3">Quản lý đánh giá</a>
+            <a href="/Manager/Revenue" class="btn btn-primary btn-block mb-3">Quản lý doanh thu</a>
+
+
+
+        </div>
+
+        <!-- Content Area Right -->
+        <div class="col-md-10 content">
+
+            @{
+                ViewData["Title"] = "Quản Lý Doanh Thu";
+            }
+
+            <div class="container-fluid">
+                <h2>@ViewData["Title"]</h2>
+
+                <div class="row">
+                    <!-- Doanh thu theo ngày -->
+                    <div class="col-md-4">
+                        <h4>Doanh Thu Theo Ngày</h4>
+                        @*<form method="get" action="/Manager/Revenue">
+                            <div class="row">
+								<div class="col-sm-10">
+                                    <select class="form-control" id="UserRole" name="Ngay" required>
+                                        @foreach (var n in Model.Ngays)
+                                        {
+                                             <option value="@n">@n</option>
+                                        }
+
+                                    </select>
+                                </div>
+								<div class="col-sm-2">
+                                    <button type="submit" class="btn btn-warning btn-sm">Lọc</button>
+                                </div>
+                            </div>
+                        </form>*@
+
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID Sản Phẩm</th>
+                                    <th>Ngày</th>
+                                    <th>Số Lượng Bán</th>
+                                    <th>Tổng Giá Trị</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var dt in Model.DoanhthuNgays)
+                                {
+                                    <tr>
+                                        <td>@dt?.SanPhamID</td>
+                                        <td>@dt?.Ngay.ToString("dd/MM/yyyy")</td>
+                                        <td>@dt?.SoLuongBan</td>
+                                        <td>@dt?.TongDoanhThu.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Doanh thu theo tháng -->
+                    <div class="col-md-4">
+                        <h4>Doanh Thu Theo Tháng</h4>
+                       @* <form method="get" action="/Manager/Revenue">
+                            <div class="row">
+								<div class="col-sm-10">
+                                    <select class="form-control" id="UserRole" name="Thang" required>
+                                        @foreach (var n in Model.Thangs)
+                                        {
+                                             <option value="@n">@n</option>
+                                        }
+
+                                    </select>
+                                </div>
+								<div class="col-sm-2">
+                                    <button type="submit" class="btn btn-warning btn-sm">Lọc</button>
+                                </div>
+                            </div>
+                        </form>*@
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tháng</th>
+                                    <th>ID Sản Phẩm</th>
+                                    <th>Số Lượng Bán</th>
+                                    <th>Tổng Giá Trị</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var dt in Model.DoanhthuThangs)
+                                {
+                                    <tr>
+                                        <td>@dt?.Ngay.Month</td>
+                                        <td>@dt?.SanPhamID</td>
+                                        <td>@dt?.SoLuongBan</td>
+                                        <td>@dt?.TongDoanhThu.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Doanh thu theo năm -->
+                    <div class="col-md-4">
+                        <h4>Doanh Thu Theo Năm</h4>
+                       @* <form method="get" action="/Manager/Revenue">
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="UserRole" name="Nam" required>
+                                        @foreach (var n in Model.Nams)
+                                        {   
+                                            <option value="@n">@n</option>
+                                        }
+
+                                    </select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-warning btn-sm">Lọc</button>
+                                </div>
+                            </div>
+                        </form>*@
+                        <table class="table table-bordered mt-2">
+                            <thead>
+                                <tr>
+                                    <th>Năm</th>
+                                    <th>ID Sản Phẩm</th>
+                                    <th>Số Lượng Bán</th>
+                                    <th>Tổng Giá Trị</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var dt in Model.DoanhthuNams)
+                                {
+                                    <tr>
+                                        <td>@dt?.Ngay.Year</td>
+                                        <td>@dt?.SanPhamID</td>
+                                        <td>@dt?.SoLuongBan</td>
+                                        <td>@dt?.TongDoanhThu.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+

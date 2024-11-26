@@ -1,0 +1,100 @@
+﻿@model WEB.Controllers.BuyView
+@{
+    ViewBag.TongSL = 0;  // Khởi tạo TongSL với giá trị 0
+}
+
+<div class="container mt-5">
+    <h2 class="text-primary text-center mb-5">Xác nhận mua hàng</h2>
+    <div class="row">
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-5">
+            <table class="table table-bordered table-hover text-center">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var sp in Model.ProductBuy)
+                    {
+                        <tr>
+                            <td>
+                                <img src="/img/@sp.HinhAnh" alt="Tên sản phẩm 1" class="img-fluid"style="object-fit: contain; width: 50px; height: 50px; border-radius: 10px;">
+                            </td>
+                            <td class="text-success font-weight-bold">@sp.TenSanPham</td>
+                            <td class="text-center">@sp.SoLuong</td>
+                            <td class="text-warning font-weight-bold">@sp.Gia</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Thông tin thanh toán -->
+        <div class="col-md-7">
+        <form action="/Cart/BuyBuy" method="post">
+            <div class="bg-light p-4 border rounded shadow-sm">
+                <h4 class="text-primary">Thông tin thanh toán</h4>
+
+                <!-- Địa chỉ giao hàng -->
+                <div class="form-group mb-4">
+                    <label for="address"  class="form-label">Chọn địa chỉ giao hàng:</label>
+                        <select id="address" name="diachi" class="form-select">
+                        @foreach (var dc in Model.DiaChis)
+                        {
+                            <option value="@dc.DiaChiID">@dc.DiaChiChiTiet</option> 
+                        }
+                    </select>
+                </div>
+
+                <!-- Hình thức thanh toán -->
+                <div class="form-group mb-4">
+                    <label for="payment-method" class="form-label">Chọn hình thức thanh toán:</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thanhtoan" id="cashOnDelivery" value="tienmat" checked>
+                            <label class="form-check-label" for="cashOnDelivery">Thanh toán khi nhận hàng (tiền mặt)</label>
+                        </div>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" name="thanhtoan" id="bankTransfer" value="chuyenkhoan">
+                            <label class="form-check-label" for="bankTransfer">Chuyển khoản ngân hàng</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tổng số lượng -->
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Tổng số lượng:</span>
+                        <strong>@Model.TongSoLuong</strong>
+                    </li>
+                    <!-- Tổng tiền -->
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Tổng tiền:</span>
+                            <strong class="text-warning" name="tonggia" value="@Model.TongTongTien">@Model.TongTongTien.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</strong>
+                    </li>
+                </ul>
+                    @*@foreach (var sp in Model.ProductBuy)
+                    {
+                        <input type="hidden" name="buy" value="@Model.ProductBuy"/>
+                        
+                    }*@
+                        @for (int i = 0; i < Model.ProductBuy.Count; i++)
+                        {
+                            <input type="hidden" name="buy[@i].SanPhamID" value="@Model.ProductBuy[i].SanPhamID" />
+                            <input type="hidden" name="buy[@i].SoLuong" value="@Model.ProductBuy[i].SoLuong" />
+                            <input type="hidden" name="buy[@i].KickThuocID" value="@Model.ProductBuy[i].KickThuocID" />
+                            <input type="hidden" name="buy[@i].Gia" value="@Model.ProductBuy[i].Gia" />
+                        }
+
+                <!-- Nút xác nhận mua hàng -->
+                <button type="submit" class="btn btn-success btn-block">Xác nhận mua hàng</button>
+            </div>
+        </form>
+        </div>
+
+    </div>
+</div>

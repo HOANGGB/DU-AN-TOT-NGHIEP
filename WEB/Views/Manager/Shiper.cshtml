@@ -1,0 +1,133 @@
+﻿@model WEB.Controllers.ShiperView
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-md-2 sidebar">
+            <a href="/Manager/User" class="btn btn-primary btn-block mb-3">Quản lý Người dùng</a>
+            <a href="/Manager/Product" class="btn btn-primary btn-block mb-3">Quản lý sản phẩm</a>
+            <a href="/Manager/Order" class="btn btn-primary btn-block mb-3">Quản lý đơn hàng</a>
+            <a href="/Manager/Category" class="btn btn-primary btn-block mb-3">Quản lý danh mục</a>
+            <a href="/Manager/Shiper" class="btn btn-primary btn-block mb-3">Quản lý Shiper</a>
+            <a href="/Manager/Review" class="btn btn-primary btn-block mb-3">Quản lý đánh giá</a>
+            <a href="/Manager/Revenue" class="btn btn-primary btn-block mb-3">Quản lý doanh thu</a>
+
+
+
+
+        </div>
+
+        <!-- Content Area Right -->
+        <div class="col-md-10 content">
+
+            @{
+    ViewData["Title"] = "Quản Lý Shipper";
+}
+
+<div class="container-fluid">
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        <!-- Cột 1: Danh sách nhân viên giao hàng -->
+        <div class="col-md-7">
+            <h4>Danh Sách Nhân Viên Giao Hàng</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Nhân Viên</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Email</th>
+                        <th>Mật khẩu</th>
+                        <th>Hành Động</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach(var s in Model.Shipers)
+                    {
+                        <tr>
+                            <td>@s.NguoiDungID</td>
+                            <td>@s.HoTen</td>
+                            <td>@s.SoDienThoai</td>
+                            <td>@s.Email</td>
+                            <td>@s.MatKhauHash</td>
+                            <td>
+                                 <form action="/Manager/ShiperViewOrder" method="post">
+                                    <input type="hidden" name="id" value="@s.NguoiDungID" />
+                                    <button type="submit" class="btn btn-warning btn-sm">Xem đơn hàng</button>
+                                </form>                            
+                            </td>
+                        </tr>
+                    }
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cột 2: Đơn hàng mà nhân viên đang giao và đã giao -->
+        <div class="col-md-5">
+            <h4>Đơn Hàng Của Nhân Viên Giao Hàng</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID Đơn Hàng</th>
+                        <th>Ngày Đặt</th>
+                        <th>Tình Trạng</th>
+                        <th>Tổng giá</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if(Model.DonHangs != null)
+                    {
+                        @foreach(var dh in Model.DonHangs){
+
+                            <tr>
+                                <td>@dh.DonHangID</td>
+                                <td>@dh.NgayDatHang</td>
+                                <td>@dh.TrangThai</td>
+                                <td>@dh.TongGia</td>
+                                <td>
+                                    <form action="/Manager/DetailOrder" method="post">
+                                        <input type="hidden" name="id" value="@dh.DonHangID" />
+                                        <button type="submit" class="btn btn-warning btn-sm">Chi tiết</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                        
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+        </div>
+    </div>
+</div>
+

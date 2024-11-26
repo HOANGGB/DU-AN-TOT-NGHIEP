@@ -1,0 +1,43 @@
+﻿@model List<WEB.Models.DiaChi>
+<div class="container mt-5">
+    <h2>Danh sách địa chỉ của người dùng</h2>
+
+    <!-- Bảng hiển thị danh sách địa chỉ -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Địa chỉ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Count > 0)
+            {
+                foreach (var diaChi in Model)
+                {
+                            <tr>
+                                <td>@diaChi.DiaChiChiTiet</td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="2" class="text-center">Không có địa chỉ nào.</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Form để thêm địa chỉ mới -->
+    <h4>Thêm địa chỉ mới</h4>
+    <form asp-controller="Account" asp-action="AddAddress" method="post">
+        <div class="form-group">
+            <label for="diaChi">Địa chỉ mới</label>
+            <input type="text" id="diaChi" name="DiaChiChiTiet" class="form-control" placeholder="Nhập địa chỉ mới" required>
+        </div>
+
+        <input type="hidden" name="NguoiDungID" value="@AccountCurrent.Acc.NguoiDungID" />
+
+        <button type="submit" class="btn btn-primary mt-2">Thêm địa chỉ</button>
+    </form>
+</div>

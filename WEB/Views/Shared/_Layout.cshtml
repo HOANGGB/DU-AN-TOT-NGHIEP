@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EShopper - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid sticky-top bg-light border-bottom border-2">
+       
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="/Home/Index" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">T</span>Shop</h1>
+                </a>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="/Home/Seach">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="TenSanPham" placeholder="Tìm kiếm tên sản phẩm....">
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+            <!-- Notification Bell Icon -->
+                <div class="dropdown d-inline">
+                    <a href="#" class="btn border dropdown-toggle" id="notificationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell text-primary"></i>
+                        <span class="badge">0</span> <!-- Số lượng thông báo -->
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationDropdown">
+                        <h6 class="dropdown-header">Thông báo</h6>
+                       @* @foreach(var tb in Model.ThongBaos)
+                        {
+                            <a class="dropdown-item" href="#">@tb.NoiDung - @tb.NgayTao.ToString("dd/MM")</a>
+                        }*@
+                        
+                    </div>
+                </div>             
+
+                <a href="/Cart/Cart" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+
+                <!-- Avatar Icon with Dropdown -->
+                 <div class="dropdown d-inline">
+                     <a href="#" class="btn" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        @if(AccountCurrent.Acc != null)
+                        {
+                            <img src="~/img/@AccountCurrent.Acc?.HinhAnh" alt="Avatar" class="rounded-circle" style="width: 30px; height: 30px; object-fit: contain;">
+                        }
+                        else{
+                            <img src="~/img/avateeee.jpg" alt="Avatar" class="rounded-circle" style="width: 30px; height: 30px; object-fit: contain;">
+                        }
+                    </a>
+                     
+                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        @if(AccountCurrent.Acc == null)
+                        {
+                            <a class="dropdown-item" href="/Account/Login">Đăng Nhập</a>
+                            <a class="dropdown-item" href="/Account/Register">Đăng Kí</a>
+                        }else{
+                            <a class="dropdown-item" href="/Home/Info">Thông tin tài khoản</a>
+                            @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+                            {
+                                <a class="dropdown-item" href="/Manager/User">Quản lý</a>
+                            }
+                            @if(AccountCurrent.Acc.VaiTro == Vaitro.Shiper)
+                            {
+                                <a class="dropdown-item" href="/Shiper/Pending">Giao hàng</a>
+                            }
+
+                            <a class="dropdown-item" href="/Account/Logout">Đăng xuất</a>
+
+
+                        }
+                     </div>
+                        @if (ViewBag.MESS != null)
+                        {
+                            <div class="alert alert-warning" role="alert">
+                                @ViewBag.MESS
+                            </div>
+                        }
+                 </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

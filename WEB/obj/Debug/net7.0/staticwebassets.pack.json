@@ -1,0 +1,429 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WEB.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WEB.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\css\\style.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\ad431d2aa4de94c79afc66c05f8602db.png",
+      "PackagePath": "staticwebassets\\img\\ad431d2aa4de94c79afc66c05f8602db.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\aobalo.png",
+      "PackagePath": "staticwebassets\\img\\aobalo.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\aokhoackaki.png",
+      "PackagePath": "staticwebassets\\img\\aokhoackaki.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\aothun.png",
+      "PackagePath": "staticwebassets\\img\\aothun.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\avatafobo.jpg",
+      "PackagePath": "staticwebassets\\img\\avatafobo.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\avatar-trang-2.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar-trang-2.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\avatar-trang-65.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar-trang-65.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\avateeee.jpg",
+      "PackagePath": "staticwebassets\\img\\avateeee.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\carousel-1.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel-1.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\carousel-2.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel-2.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\cat-1.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-1.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\cat-2.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-2.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\cat-3.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-3.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\cat-4.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-4.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\cat-5.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-5.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\cat-6.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-6.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\images.png",
+      "PackagePath": "staticwebassets\\img\\images.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\offer-1.png",
+      "PackagePath": "staticwebassets\\img\\offer-1.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\offer-2.png",
+      "PackagePath": "staticwebassets\\img\\offer-2.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\payments.png",
+      "PackagePath": "staticwebassets\\img\\payments.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product-1.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product-2.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product-3.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-4.jpg",
+      "PackagePath": "staticwebassets\\img\\product-4.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-5.jpg",
+      "PackagePath": "staticwebassets\\img\\product-5.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-6.jpg",
+      "PackagePath": "staticwebassets\\img\\product-6.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-7.jpg",
+      "PackagePath": "staticwebassets\\img\\product-7.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\product-8.jpg",
+      "PackagePath": "staticwebassets\\img\\product-8.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\quanjean.png",
+      "PackagePath": "staticwebassets\\img\\quanjean.png"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-1.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-1.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-2.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-2.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-3.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-3.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-4.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-4.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-5.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-5.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-6.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-6.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-7.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-7.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\img\\vendor-8.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-8.jpg"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\FPT_Polytechnic\\DỰ ÁN TỐT NGHIỆP\\DU AN TOT NGHIEP\\WEB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WEB.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WEB.props",
+      "PackagePath": "build\\WEB.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WEB.props",
+      "PackagePath": "buildMultiTargeting\\WEB.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WEB.props",
+      "PackagePath": "buildTransitive\\WEB.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

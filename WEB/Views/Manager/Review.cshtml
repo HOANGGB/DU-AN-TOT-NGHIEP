@@ -1,0 +1,131 @@
+﻿@model List<WEB.Models.DanhGiaSanPham>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <!-- Sidebar Left -->
+        <div class="col-md-2 sidebar">
+            <a href="/Manager/User" class="btn btn-primary btn-block mb-3">Quản lý Người dùng</a>
+            <a href="/Manager/Product" class="btn btn-primary btn-block mb-3">Quản lý sản phẩm</a>
+            <a href="/Manager/Order" class="btn btn-primary btn-block mb-3">Quản lý đơn hàng</a>
+            <a href="/Manager/Category" class="btn btn-primary btn-block mb-3">Quản lý danh mục</a>
+            <a href="/Manager/Shiper" class="btn btn-primary btn-block mb-3">Quản lý Shiper</a>
+            <a href="/Manager/Review" class="btn btn-primary btn-block mb-3">Quản lý đánh giá</a>
+            <a href="/Manager/Revenue" class="btn btn-primary btn-block mb-3">Quản lý doanh thu</a>
+
+
+        </div>
+
+        <!-- Content Area Right -->
+        <div class="col-md-10 content">
+
+            @{
+                ViewData["Title"] = "Quản Lý Đánh Giá Sản Phẩm";
+            }
+
+            <div class="container-fluid">
+                <div class="row">
+
+               <h4 class="text-success col-sm-2">Lọc theo:</h4>
+
+                    <div class="btn-group col-sm-8 mb-3" role="group" aria-label="Order Status Buttons">
+                        <form action="/Manager/Review" method="post">
+                            <input type="hidden" name="fill" value="diemsocao" />
+                            <button type="submit" class="btn btn-outline-primary">Điểm số cao nhất</button>
+                        </form>
+                        <form action="/Manager/Review" method="post">
+                            <input type="hidden" name="fill" value="diemsothap" />
+                            <button type="submit" class="btn btn-outline-primary">Điểm số thấp nhất</button>
+                        </form>
+                        <form action="/Manager/Review" method="post">
+                            <input type="hidden" name="fill" value="moi" />
+
+                            <button type="submit" class="btn btn-outline-danger">Mới Nhất</button>
+                        </form>
+                        <form action="/Manager/Review" method="post">
+                            <input type="hidden" name="fill" value="cu" />
+                            <button type="submit" class="btn btn-outline-danger">Lâu Nhất</button>
+                        </form>
+                    </div>
+                </div>
+                <h2>@ViewData["Title"]</h2>
+                <div class="row">
+                    <!-- Cột hiển thị đánh giá -->
+                    <div class="col-md-12">
+                        <h4>Danh Sách Đánh Giá</h4>
+                        <div class="" style="max-height: 400px; overflow-y:auto; overflow-x:hidden">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID </th>
+                                    <th>ID User</th>
+                                    <th>ID Sản Phẩm</th>
+                                    <th>Số Điểm</th>
+                                    <th>Ngày </th>
+                                    <th>Nội Dung</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var dg in Model)
+                                {
+                                    <tr>
+                                        <td>@dg.DanhGiaID</td>
+                                        <td>@dg.NguoiDungID</td>
+                                        <td>@dg.SanPhamID</td>
+                                        <td>@dg.DiemDanhGia</td>
+                                        <td>@dg.NgayDanhGia</td>
+                                        <td>@dg.BinhLuan</td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <form action="/Home/Detail" method="post">
+                                                        <input type="hidden" name="id" value="@dg.SanPhamID" />
+                                                        <button type="submit" class="btn btn-warning btn-sm">Xem sản phẩm</button>
+                                                    </form>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <form action="/Manager/DeleteReview" method="post">
+                                                        <input type="hidden" name="id" value="@dg.DanhGiaID" />
+                                                        <button type="submit" class="btn btn-danger btn-sm">Xóa đánh giá</button>
+                                                    </form>                                        
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                }
+                                
+                            </tbody>
+                        </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+

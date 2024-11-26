@@ -1,0 +1,103 @@
+﻿@model List<WEB.Models.DonHang>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark  mb-5">
+    @if(AccountCurrent.Acc.VaiTro == Vaitro.Admin)
+    {
+        <a class="navbar-brand" href="#">QUẢN LÝ HỆ THỐNG</a>
+    }
+    else
+    {
+        <a class="navbar-brand" href="#">GIAO HÀNG</a>
+
+    }
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar Left (Status Buttons) -->
+        <div class="col-md-3">
+            <div class="list-group">
+                <!-- Form for Pending Orders -->
+                <form action="/Shiper/Pending" method="post" class="mb-3">
+                    <button type="submit" class="btn btn-dark w-100" id="btn-pending">
+                        Đơn chưa giao
+                    </button>
+                </form>
+
+                <!-- Form for In Progress Orders -->
+                <form action="/Shiper/InProgress" method="post" class="mb-3">
+                    <button type="submit" class="btn btn-warning w-100" id="btn-delivering">
+                        Đơn đang giao
+                    </button>
+                </form>
+
+                <!-- Form for Delivered Orders -->
+                <form action="/Shiper/Delivered" method="post" class="mb-3">
+                    <button type="submit" class="btn btn-success w-100" id="btn-delivered">
+                        Đơn đã giao
+                    </button>
+                </form>
+
+                <!-- Form for Rejected Orders -->
+                <form action="/Shiper/Cancelled" method="post">
+                    <button type="submit" class="btn btn-danger w-100" id="btn-rejected">
+                        Đơn đã từ chối
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-9 mt-5">
+            <h2>Danh sách đơn hàng đang giao</h2>
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th>ID Đơn hàng</th>
+                        <th>Ngày đặt</th>
+                        <th>Tình trạng</th>
+                        <th>Thành tiền</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var dh in Model)
+                    {
+                        <tr>
+                            <td>@dh.DonHangID</td>
+                            <td>@dh.NgayDatHang</td>
+                            <td>@dh.TrangThai</td>
+                            <td>@dh.TongGia</td>
+                            <td>
+                                <div class="d-flex justify-content-start">
+                                    <form action="/Manager/DetailOrder" method="post" class="me-2">
+                                        <input type="hidden" name="id" value="@dh.DonHangID" />
+                                        <button type="submit" class="btn btn-warning">Xem chi tiết</button>
+                                    </form>
+
+                                    <form action="/Shiper/ConfirmComplete" method="post">
+                                        <input type="hidden" name="id" value="@dh.DonHangID" />
+                                        <button type="submit" class="btn btn-success">Giao hàng thành công</button>
+                                    </form>
+
+                                    <form action="/Shiper/Cancel" method="post">
+                                        <input type="hidden" name="id" value="@dh.DonHangID" />
+                                        <button type="submit" class="btn btn-danger">Từ chối</button>
+                                    </form>
+                                </div>
+                            </td>                        
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+</div>

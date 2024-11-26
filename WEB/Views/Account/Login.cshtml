@@ -1,0 +1,41 @@
+﻿
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-6 m-auto">
+            <div class="login-form shadow p-4 rounded bg-light">
+                <h2 class="text-center mb-4">Đăng nhập</h2>
+                <form asp-controller="Account" asp-action="CheckLogin" method="post">
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Nhập email của bạn" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" id="password" class="form-control" name="pass" placeholder="Nhập mật khẩu" required>
+                    </div>
+                    <p class="text-danger">@ViewBag.MessER</p>
+                     
+                    <p class="mt-2">
+                        <a asp-controller="Account" asp-action="ForgotPassword">Quên mật khẩu?</a>
+                    </p>
+
+                    <!-- Register Link -->
+                    <p class="mt-2">
+                        Chưa có tài khoản?
+                        <a asp-controller="Account" asp-action="Register">Đăng ký</a>
+                    </p>
+
+                    <!-- Submit Button -->
+                    <!-- Submit Button (Centered) -->
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary mt-4">Đăng nhập</button>
+                    </div>                
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

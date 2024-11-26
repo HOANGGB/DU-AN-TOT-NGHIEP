@@ -1,0 +1,73 @@
+﻿@model List<WEB.Controllers.CartView>
+
+<div class="container mt-5">
+    <h2 class="text-primary mb-4">Giỏ hàng của bạn</h2>
+
+    <!-- Button to view previous orders -->
+    <a href="/Cart/Order" class="btn btn-outline-primary mb-3">Xem sản phẩm đã mua</a>
+
+    <!-- Shopping cart table -->
+    <form asp-controller="Cart" asp-action="Buy" method="post">
+        <table class="table table-hover table-bordered text-center align-middle">
+            <thead class="bg-primary text-white">
+                 <form></form>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Hình ảnh</th>
+                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Số lượng</th>
+                    <th scope="col">Kích cỡ</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var gh in Model)
+                {
+                    <tr>
+                        <!-- Checkbox for selecting item to place an order -->
+                        <td>
+                            <input type="checkbox" name="selectedItems" value="@gh.GioHangID">
+                        </td>
+                        <td>
+                            <img src="/img/@gh.HinhAnh" alt="@gh.HinhAnh" class="img-fluid" style="width: 80px; height: 80px; border-radius: 10px;">
+                        </td>
+                        <td class="text-success font-weight-bold">@gh.TenSanPham</td>
+                        <td>
+                            <div class="input-group" style="max-width: 140px; margin: auto;">
+                                <!-- Form trừ số lượng -->
+                                <form action="/Cart/Sub_PlusCart" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@gh.GioHangID" />
+                                    <input type="hidden" name="SP" value="Sub" />
+                                    <button type="submit" class="btn btn-danger btn-sm">-</button>
+                                </form>
+
+                                <!-- Hiển thị số lượng -->
+                                <input type="text" class="form-control text-center" value="@gh.SoLuong" readonly style="background-color: #f8f9fa;">
+
+                                <!-- Form cộng số lượng -->
+                                <form action="/Cart/Sub_PlusCart" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@gh.GioHangID" />
+                                    <input type="hidden" name="SP" value="Plus" />
+                                    <button type="submit" class="btn btn-success btn-sm">+</button>
+                                </form>
+                            </div>
+                        </td>
+                        <td class="text-warning font-weight-bold">@gh.KichThuoc.KichThuoc</td>
+                        <td class="text-warning font-weight-bold">@gh.Gia.ToString("C", new System.Globalization.CultureInfo("vi-VN"))</td>
+                        <td>
+                            <form action="/Home/Detail" method="post">
+                                <input type="hidden" name="id" value="@gh.SanPhamID" />
+                                <button type="submit" class="btn btn-warning btn-sm">Xem Sản Phẩm</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Bulk order button -->
+        <button type="submit" class="btn btn-success mt-3">Đặt hàng các sản phẩm đã chọn</button>
+    </form>
+
+</div>
